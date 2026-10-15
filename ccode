@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Andromeda333 — Roblox Scripter. Gameplay systems, Luau scripting and Roblox development.">
+  <title>Andromeda333 | Roblox Scripter</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #0b0d12;
+      color: #f4f4f8;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: #a99bff; text-decoration: none; }
+    a:hover { color: #c9c0ff; }
+    .container { width: min(1000px, 90%); margin: auto; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid #252936;
+    }
+    .logo { font-size: 21px; font-weight: 800; letter-spacing: -1px; }
+    .logo span, .accent { color: #a99bff; }
+    nav .links { display: flex; gap: 22px; }
+    nav .links a { color: #c4c6d0; font-size: 14px; }
+    .hero { padding: 105px 0 90px; }
+    .tag {
+      display: inline-block;
+      padding: 5px 12px;
+      border: 1px solid #393253;
+      border-radius: 30px;
+      color: #c5baff;
+      background: #191629;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: clamp(43px, 8vw, 76px);
+      line-height: 1.08;
+      letter-spacing: -3px;
+      margin: 25px 0;
+    }
+    .intro { max-width: 620px; color: #a9adba; font-size: 18px; }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #a99bff;
+      color: #11111a;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .button:hover { background: #c2b8ff; color: #11111a; }
+    section { padding: 45px 0; }
+    h2 { font-size: 30px; letter-spacing: -1px; }
+    .subtitle { color: #969baa; margin-top: -12px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #13161e;
+      border: 1px solid #292d39;
+      border-radius: 14px;
+      padding: 22px;
+      transition: transform .2s, border-color .2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #7264b7; }
+    .preview {
+      min-height: 145px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, #242039, #171b27);
+      display: grid;
+      place-items: center;
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p { color: #a9adba; font-size: 14px; }
+    .label { color: #c2b8ff; font-size: 12px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills span {
+      padding: 7px 13px;
+      background: #191c26;
+      border: 1px solid #2b2e3b;
+      border-radius: 8px;
+      color: #d5d0ff;
+      font-size: 14px;
+    }
+    .contact {
+      padding: 28px;
+      background: #13161e;
+      border: 1px solid #292d39;
+      border-radius: 14px;
+    }
+    footer {
+      margin-top: 55px;
+      padding: 25px 0;
+      border-top: 1px solid #252936;
+      color: #858a99;
+      font-size: 13px;
+    }
+    @media (max-width: 550px) {
+      nav { align-items: flex-start; gap: 14px; flex-direction: column; }
+      nav .links { gap: 16px; flex-wrap: wrap; }
+      .hero { padding: 70px 0; }
+      h1 { letter-spacing: -2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">Andromeda<span>333.</span></div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero" id="about">
+      <span class="tag">ROBLOX GAME DEVELOPMENT</span>
+      <h1>Building games.<br><span class="accent">Writing systems.</span></h1>
+      <p class="intro">
+        Hey, I'm Andromeda333, a Roblox scripter focused on
+        building gameplay systems and interactive features with Luau.
+      </p>
+      <a class="button" href="#projects">Explore My Projects ↘</a>
+    </header>
+
+    <section id="projects">
+      <h2>Featured Projects<span class="accent">.</span></h2>
+      <p class="subtitle">A selection of my Roblox development work.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="preview">🐾</div>
+          <span class="label">GAME SYSTEM</span>
+          <h3>Pet Income System</h3>
+          <p>A pet system featuring passive income and player data saving.</p>
+          <p><strong>Technologies:</strong> Luau, DataStore</p>
+        </article>
+        <article class="card">
+          <div class="preview">⚔️</div>
+          <span class="label">GAMEPLAY</span>
+          <h3>Combat & Matchmaking</h3>
+          <p>A Roblox project focused on combat mechanics and match management.</p>
+          <p><strong>Technologies:</strong> Luau, Roblox Studio</p>
+        </article>
+        <article class="card">
+          <div class="preview">🎮</div>
+          <span class="label">MORE PROJECTS</span>
+          <h3>Coming Soon</h3>
+          <p>More gameplay systems, experiments and demonstrations will be added here.</p>
+        </article>
+      </div>
+      <p class="subtitle" style="margin-top:20px">
+        Project descriptions are examples. Update them to match your actual work.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Tools<span class="accent">.</span></h2>
+      <div class="skills">
+        <span>Luau</span>
+        <span>Roblox Studio</span>
+        <span>DataStore</span>
+        <span>Gameplay Systems</span>
+        <span>Debugging</span>
+        <span>UI Integration</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Work Together<span class="accent">.</span></h2>
+      <div class="contact">
+        <p class="subtitle">
+          Have a Roblox project in mind? Feel free to reach out.
+        </p>
+        <p>Discord: <strong>Add your Discord username</strong></p>
+        <p>GitHub: <a href="https://github.com/andromeda333">github.com/andromeda333</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Andromeda333 · Roblox Scripter Portfolio
+    </footer>
+  </div>
+</body>
+</html>
